@@ -1,8 +1,7 @@
 # Trees
 ## Overview
 ### Definition of a Tree
-* data structure
-* consists of nodes with a value and references to other nodes (child nodes)
+* data structure consisting of nodes with a value and references to other nodes (child nodes)
 * often used to simulate hierarchical tree structure
 * could also be defined as a acyclic graph with N nodes and N - 1 edges
 
