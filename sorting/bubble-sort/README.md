@@ -11,3 +11,5 @@ Small optimization:
 Each iteration through array leaves a number at the end that is in its final position. E.g. The last number in the array after the first complete iteration is the greatest number in the array and therefore in its final position. Same is the case for the second to largest number after 2nd iteratino etc.
 I.e. for each while after the fierst we can exclude one more number at the end of the array from iteration.
 This is a small optimization that does not effect the overall analyses and big O notation for this algorithm.
+
+The swapping could also be broken up and handled in a separate helper function.
