@@ -1,14 +1,14 @@
-function inOrderTraverse(tree) {
+function inOrderTraversal(tree) {
   if(!tree) return [];
-  return inOrderTraverse(tree.left).concat([tree.value]).concat(inOrderTraverse(tree.right));
+  return inOrderTraversal(tree.left).concat([tree.value]).concat(inOrderTraversal(tree.right));
 }
 
-function preOrderTraverse(tree) {
+function preOrderTraversal(tree) {
   if(!tree) return [];
-	return [tree.value].concat(preOrderTraverse(tree.left)).concat(preOrderTraverse(tree.right));
+	return [tree.value].concat(preOrderTraversal(tree.left)).concat(preOrderTraversal(tree.right));
 }
 
-function postOrderTraverse(tree) {
+function postOrderTraversal(tree) {
   if(!tree) return [];
-	return postOrderTraverse(tree.left).concat(postOrderTraverse(tree.right)).concat([tree.value]);
+	return postOrderTraversal(tree.left).concat(postOrderTraversal(tree.right)).concat([tree.value]);
 }
