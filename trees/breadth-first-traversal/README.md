@@ -4,5 +4,5 @@ Time: O(v + e)<br>
 *v = vertices, e = edges*<br>
 
 Space: O(v)<br>
-*Values being stored in an output array is the biggest number.<br>
-Nodes/vertices are stored in array as well but that's the smaller number and therefore it's disregarded.*
+*THe number of values being stored in an output array is the bigger number.<br>
+Nodes/vertices are stored in array as well but this number is smaller and therefore it's disregarded.*
