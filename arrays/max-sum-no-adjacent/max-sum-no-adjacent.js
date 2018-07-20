@@ -1,9 +1,13 @@
-function maxSumNoAdjacent(array) {
-	if (array.length < 1) return 0;
+function maxSubsetSumAdj(array) {
+  if (array.length < 1) return 0;
 	if (array.length < 2) return array[0];
-	let maxSums = [array[0], Math.max(array[0], array[1])];
+	let previous = array[0];
+	let currentMax = Math.max(array[0], array[1]);
+	let beforePrevious;
 	for (let i = 2; i < array.length; i++) {
-		maxSums.push(Math.max(maxSums[i - 1], (maxSums[i - 2] + array[i])));
+		beforePrevious = previous;
+		previous = currentMax;
+		currentMax = Math.max(previous, beforePrevious + array[i]);
 	}
-	return maxSums.pop();
+	return currentMax;
 }
