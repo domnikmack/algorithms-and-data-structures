@@ -1,10 +1,10 @@
-function binarySearch(arr, target) {
+function binarySearch(array, target) {
   let leftIndex = 0;
-	let rightIndex = arr.length - 1;
+	let rightIndex = array.length - 1;
 	while (leftIndex <= rightIndex) {
 		let midPointIndex = Math.floor((leftIndex + leftIndex) / 2);
-		if (arr[midPointIndex] === target) return midPointIndex;
-	  if (target < arr[midPointIndex]) {
+		if (array[midPointIndex] === target) return midPointIndex;
+	  if (target < array[midPointIndex]) {
 			rightIndex = midPointIndex - 1;
 		} else {
 			leftIndex = midPointIndex + 1;
